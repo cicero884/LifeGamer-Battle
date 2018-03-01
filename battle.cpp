@@ -564,8 +564,8 @@ void Battle::clk()
     p2_toSendst << countdown / 10 << ' ' << p2->mana;
 
     for(int i = 0;i < 4;i++) {
-        p1_toSendst << ' ' << p1->deck[i];
-        p2_toSendst << ' ' << p2->deck[i];
+        p1_toSendst << ' ' << (char)(p1->deck[i]+'0');
+        p2_toSendst << ' ' << (char)(p2->deck[i]+'0');
     }
     p1_toSendst << '\n';
     p2_toSendst << '\n';
